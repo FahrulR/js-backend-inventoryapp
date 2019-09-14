@@ -11,7 +11,7 @@ const categoryRoute = require('./src/routes/category')
 const userRoute = require('./src/routes/users')
 
 app.listen(process.env.SERVER_PORT || 5000, () => {
-  console.log(`Server is running on Port ${port}`)
+  console.log(`Server is running `)
 })
 
 // user controllers input
