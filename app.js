@@ -10,9 +10,7 @@ const productsRoute = require('./src/routes/products')
 const categoryRoute = require('./src/routes/category')
 const userRoute = require('./src/routes/users')
 
-const port = process.env.SERVER_PORT || 5000
-
-app.listen(port,'0.0.0.0', () => {
+app.listen(process.env.SERVER_PORT || 5000, () => {
   console.log(`Server is running on Port ${port}`)
 })
 
