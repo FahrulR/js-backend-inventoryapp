@@ -10,8 +10,10 @@ const productsRoute = require('./src/routes/products')
 const categoryRoute = require('./src/routes/category')
 const userRoute = require('./src/routes/users')
 
-app.listen(process.env.SERVER_PORT || 5000, () => {
-  console.log(`Server is running `)
+const port = process.env.SERVER_PORT || 5000
+
+app.listen(port, () => {
+  console.log(`Server is running on ${port} `)
 })
 
 // user controllers input
