@@ -67,7 +67,7 @@ module.exports = {
       })
       .catch(err => {
         console.error(err)
-        return responses.dataManipulationResponse(res, 500, err)
+        return responses.dataManipulationResponse(res, 500, 'Cannot delete a foreign key constraint')
       })
   }
 }

@@ -63,7 +63,7 @@ module.exports = {
       })
       .catch(err => {
         console.error(err)
-        return responses.getDataResponse(res, 500, err)
+        return responses.getDataResponse(res, 500, "Please field out the field")
       })
   },
   reduceProduct: (req, res) => {

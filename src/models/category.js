@@ -10,7 +10,7 @@ module.exports = {
   },
   getAllCategory: () => {
     return new Promise((resolve, reject) => {
-      conn.query('SELECT * FROM category ', (err, result) => {
+      conn.query('SELECT * FROM category order by name ', (err, result) => {
         if (!err) { resolve(result) } else { reject(err) }
       })
     })
