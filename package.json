@@ -1,7 +1,7 @@
 {
   "name": "inventory-app",
   "version": "1.0.0",
-  "description": "RESTFul API inventory-app",
+  "description": "RESTFul API inventoryapp",
   "main": "app.js",
   "dependencies": {
     "@hapi/joi": "^15.1.1",

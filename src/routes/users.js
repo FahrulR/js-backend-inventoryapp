@@ -9,7 +9,7 @@ Route
   .post('/register', UserController.registerUser)
   .post('/login', UserController.loginUser)
   .get('/', Auth.verifyTokenHelpers, UserController.getAllUser)
-  .get('/profile', Auth.verifyTokenHelpers, UserController.getUserProfile)
+  .get('/profile', UserController.getUserProfile)
   //.get('/:id', Auth.verifyTokenHelpers, Auth.verifyAdminPrevilege, UserController.getOneUser)
 
 module.exports = Route

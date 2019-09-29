@@ -27,7 +27,7 @@ module.exports = {
     const keyword = req.query.search
     const sort = req.query.sortby || 'name'
     const page = req.query.page || 1
-    const limit = req.query.limit || 6
+    const limit = req.query.limit || 25
     const skip = (Number(page) - 1) * limit
 
     modelProducts.getAllProducts(keyword, sort, skip, limit)

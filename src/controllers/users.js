@@ -8,7 +8,7 @@ const isFormValid = (data, error) => {
     username: Joi.string().alphanum().min(3).max(30).required(),
     fullname: Joi.string().required(),
     password: Joi.string().min(8).required(),
-    email: Joi.string().email({ minDomainSegments: 2 }),
+    email: Joi.string().email({ minDomainSegments: 2 }).required(),
     level: Joi.string()
   })
   const result = Joi.validate(data, schema)
