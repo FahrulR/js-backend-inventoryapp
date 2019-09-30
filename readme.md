@@ -1,4 +1,4 @@
-# RESTful API Inventory
+# RESTful API Greener Inventory 
 Restful API using Node js, Express and MySQL Database
 
 ----
